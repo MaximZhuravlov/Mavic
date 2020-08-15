@@ -1,0 +1,109 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	color: #fff;
+	@extend %ubuntu-light;
+	font-size: 17px;
+	line-height: (25 / 17);
+	position: relative;
+}
+
+html, body {
+	scrollbar-width: none;
+	overflow: hidden !important;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+	color: inherit;
+}
+
+.container {
+	max-width: 1270px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.page-section {
+	height: 100vh;
+	max-height: 100vh;
+	background-image: url(../images/section-background.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	padding: 90px 0 0;
+	position: relative;
+
+	&::before {
+		position: absolute;
+		content: "";
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: linear-gradient(119.35deg, rgba(23, 26, 28, 0.72) 0%, #5e5e57 100%);
+		opacity: 0.15;
+	}
+
+	&-wrapper {
+		position: relative;
+		z-index: 1;
+	}
+}
+
+.center-wrapper {
+	margin: auto;
+}
+
+.section-title {
+	@extend %sf-regular;
+	font-size: 44px;
+	line-height: 1.2;
+	padding-left: 25px;
+	margin-bottom: 55px;
+}
+
+.scroll-down {
+	text-align: center;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	&-link {
+		width: 100%;
+		height: 45px;
+		&::before {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			font-size: 30px;
+			transform: translate(-50%, -50%);
+			font-family: "icomoon";
+			content: "\f107";
+			color: rgba(#fff, 0.5);
+		}
+	}
+}
+
+.lime {
+	background-color: lime;
+}

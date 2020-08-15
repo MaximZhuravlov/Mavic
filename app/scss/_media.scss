@@ -1,0 +1,340 @@
+@media (max-width: 1350px) {
+	.about-slider-box {
+		&::before {
+			right: -7px;
+		}
+	}
+
+	.benefits-item:nth-child(4) {
+		transform: none;
+	}
+
+	.answers-items {
+		max-width: 90%;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 1270px) {
+	.page-section {
+		padding-top: 20px !important;
+	}
+
+	.section-title {
+		text-align: center;
+		padding-left: 0;
+	}
+
+	.showcase-title {
+		font-size: 48px;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.menu-list-item-link,
+	.header-info-phone,
+	.header-info-button {
+		font-size: 12px;
+	}
+
+	.about {
+		&-inner {
+			flex-direction: column;
+			padding-left: 0;
+		}
+
+		&-text {
+			max-width: 90%;
+			margin: 0 auto;
+			text-align: justify;
+		}
+
+		&-slider {
+			padding-top: 30px;
+
+			&-box {
+				margin: 0 auto;
+			}
+
+			&-text {
+				left: 0;
+				bottom: 0;
+			}
+		}
+	}
+
+	.benefits {
+		&-items {
+			flex-wrap: nowrap;
+			flex-direction: column;
+
+			svg {
+				display: none;
+			}
+		}
+
+		&-item {
+			margin-bottom: 20px;
+		}
+
+		&-item-info-title {
+			font-size: 21px;
+		}
+
+		&-text {
+			font-size: 15px;
+		}
+	}
+
+	.characteristics {
+		svg {
+			display: none;
+		}
+
+		&-item-box {
+			margin-top: 0;
+
+			&.box-2,
+			&.box-4 {
+				margin-top: 30px;
+			}
+		}
+	}
+
+	.contacts {
+		&-inner {
+			justify-content: space-around;
+		}
+
+		&-form {
+			margin-right: 0;
+			width: 60%;
+		}
+
+		&-info-title {
+			font-size: 16px;
+		}
+
+		&-info-text {
+			font-size: 13px;
+		}
+	}
+}
+
+@media (max-width: 1100px) {
+	.benefits-items {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.benefits-item-image {
+		display: none;
+	}
+
+	.benefits-item-info {
+		width: 100%;
+	}
+
+	.benefits-item-number {
+		display: none;
+	}
+
+	.benefits-item-info-title {
+		margin-bottom: 10px;
+	}
+
+	.benefits-item-info-title,
+	.benefits-item-info-text {
+		width: 100%;
+	}
+
+	.benefits-item-info-title {
+		text-align: center;
+	}
+
+	.benefits-item-info-text {
+		font-size: 15px;
+		text-align: justify;
+		line-height: 1.3;
+	}
+
+	.benefits-item:nth-child(3) {
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 900px) {
+	.characteristics {
+		img {
+			display: none;
+		}
+	}
+
+	.answers-item-title {
+		font-size: 16px;
+		padding: 10px 60px 25px 40px;
+	}
+
+	.answers-item-text {
+		font-size: 12px;
+	}
+
+	.answers-item-title .accordion-arrow {
+		width: 50px;
+		height: 50px;
+	}
+
+	.answers-item-title .accordion-arrow::before {
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 800px) {
+	body {
+		font-size: 14px;
+	}
+
+	.page-section {
+		padding-top: 0;
+	}
+
+	.section-title {
+		font-size: 32px;
+	}
+
+	.header {
+		display: none;
+	}
+
+	.about-slider-text {
+		font-size: 20px;
+	}
+
+	.contacts-form-fields {
+		flex-direction: column;
+	}
+
+	.contacts-form input[type="text"],
+	.contacts-form input[type="email"] {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.contacts-form textarea {
+		margin-top: 0;
+	}
+}
+
+@media (max-width: 700px) {
+	.characteristics-inner {
+		flex-direction: column;
+	}
+
+	.characteristics-item-box {
+		margin: 0 auto 20px;
+		width: 90%;
+	}
+
+	.characteristics-item-title {
+		text-align: center;
+	}
+
+	.characteristics-item-text {
+		text-align: justify;
+	}
+}
+
+@media (max-width: 600px) {
+	.section-title {
+		font-size: 24px;
+		margin-bottom: 30px;
+	}
+	.about-slider-box::before {
+		display: none;
+	}
+
+	.about-slider-text {
+		font-size: 14px;
+		width: 100%;
+		text-align: center;
+		bottom: 10px;
+	}
+
+	.about-text-paragraph:not(:last-child) {
+		margin-bottom: 15px;
+	}
+
+	.answers-items {
+		max-width: 100%;
+	}
+
+	.answers-item-title,
+	.answers-item-text {
+		padding-left: 15px;
+	}
+
+	.contacts-inner {
+		flex-direction: column;
+	}
+
+	.contacts-info {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.contacts-form {
+		width: 100%;
+	}
+
+	.contacts-form-title,
+	.contacts-form-text {
+		text-align: center;
+	}
+
+	.contacts-form textarea {
+		height: 90px;
+	}
+
+	.contacts-links {
+		width: 100%;
+	}
+
+	.contacts-links-list {
+		display: flex;
+		justify-content: space-around;
+		width: 200px;
+		margin: 0 auto;
+	}
+
+	.contacts-form .submit {
+		text-align: center;
+	}
+}
+
+@media (max-height: 800px) {
+	.about-slider {
+		padding-top: 50px;
+	}
+
+	.answers-item-title {
+		font-size: 16px;
+		padding-bottom: 20px;
+	}
+
+	.answers-item-title .accordion-arrow {
+		width: 45px;
+		height: 45px;
+	}
+}
+
+@media (max-height: 650px) {
+	.about-slider-box {
+		.slick-arrow {
+			display: none;
+		}
+	}
+}
