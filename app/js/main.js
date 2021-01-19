@@ -17,14 +17,17 @@ $(document).ready(function () {
 		}
 	});
 
-	// Slider
-	$(".about-slider-box").slick({
-		slidesToScroll: 1,
-		slidesToShow: 1,
-		infinite: false,
-		prevArrow: '<button type="button" class="slick-prev"></button>',
-		nextArrow: '<button type="button" class="slick-next"></button>'
-	});
+  // Slider
+  setInterval(function() {
+    // prevent slider from not loading
+    $(".about-slider-box").slick({
+      slidesToScroll: 1,
+      slidesToShow: 1,
+      infinite: false,
+      prevArrow: '<button type="button" class="slick-prev"></button>',
+      nextArrow: '<button type="button" class="slick-next"></button>'
+    });
+  }, 5);
 
 	// Accordion
 	$(".answers-item-title").on("click", function () {
